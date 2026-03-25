@@ -56,8 +56,11 @@ export default function App() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass border-b border-accent/10 py-4">
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <div className="serif text-2xl font-semibold tracking-wider text-accent">
-            HUYỀN SĨ
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="Huyền Sĩ Logo" className="h-10 w-auto opacity-90" referrerPolicy="no-referrer" />
+            <div className="serif text-2xl font-semibold tracking-wider text-accent">
+              HUYỀN SĨ
+            </div>
           </div>
           <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
             <a href="#philosophy" className="hover:text-accent transition-colors">Triết lý</a>
@@ -80,12 +83,22 @@ export default function App() {
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000" />
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
           >
+            <div className="mb-12 relative inline-block">
+              <div className="absolute inset-0 bg-accent/20 blur-[100px] rounded-full" />
+              <img 
+                src="/logo.png" 
+                alt="Huyền Sĩ Logo" 
+                className="relative z-10 max-w-full md:max-w-3xl mx-auto rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.3)] border border-white/10" 
+                referrerPolicy="no-referrer"
+              />
+            </div>
+            
             <span className="inline-block px-4 py-1 border border-accent/30 rounded-full text-accent text-xs tracking-[0.3em] uppercase mb-6 font-semibold">
               Luận Bát Tự | Phong Thủy
             </span>
@@ -101,9 +114,14 @@ export default function App() {
               <a href="#workflow" className="w-full md:w-auto bg-accent text-white px-10 py-4 rounded-full text-lg font-medium hover:scale-105 transition-transform shadow-xl shadow-accent/30 flex items-center justify-center gap-2">
                 Đặt lịch xem Bát Tự <ArrowRight size={20} />
               </a>
-              <button className="w-full md:w-auto border border-accent/30 px-10 py-4 rounded-full text-lg font-medium hover:bg-accent/5 transition-colors">
+              <a 
+                href="https://www.youtube.com/playlist?list=PLwwNdFoFbaL4Jyt4n4QGD6dEFK_-0bmii" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-full md:w-auto border border-accent/30 px-10 py-4 rounded-full text-lg font-medium hover:bg-accent/5 transition-colors flex items-center justify-center"
+              >
                 Xem luận giải thật
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
@@ -595,6 +613,10 @@ export default function App() {
       <footer className="py-32 bg-white border-t border-accent/10">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <motion.div {...fadeIn}>
+            <div className="mb-12">
+              <img src="/logo.png" alt="Huyền Sĩ Logo" className="h-20 w-auto mx-auto opacity-80 grayscale hover:grayscale-0 transition-all" referrerPolicy="no-referrer" />
+            </div>
+            
             <h2 className="serif text-4xl md:text-6xl font-light mb-12 leading-tight">
               Nếu bạn cần một người đi cùng bạn trên hành trình <br />
               <span className="text-accent italic">hiểu và thay đổi cuộc đời...</span>
