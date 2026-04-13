@@ -19,7 +19,8 @@ import {
   Brain,
   Target,
   Check,
-  AlertTriangle
+  AlertTriangle,
+  Facebook
 } from "lucide-react";
 
 const fadeIn = {
@@ -42,16 +43,30 @@ const staggerContainer = {
 export default function App() {
   return (
     <div className="min-h-screen selection:bg-accent/30">
-      {/* Floating Zalo Button */}
-      <a 
-        href="https://zalo.me/0965414632" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        className="fixed bottom-8 right-8 z-50 bg-[#0068ff] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center"
-        title="Chat Zalo"
-      >
-        <MessageCircle size={28} />
-      </a>
+      {/* Floating Chat Buttons */}
+      <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
+        {/* Facebook Messenger Button */}
+        <a 
+          href="https://m.me/ucson.52637" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-[#0084FF] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center"
+          title="Chat Facebook"
+        >
+          <Facebook size={28} />
+        </a>
+
+        {/* Zalo Button */}
+        <a 
+          href="https://zalo.me/0965414632" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-[#0068ff] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform flex items-center justify-center"
+          title="Chat Zalo"
+        >
+          <MessageCircle size={28} />
+        </a>
+      </div>
 
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 glass border-b border-accent/10 py-4">
@@ -91,12 +106,6 @@ export default function App() {
           >
             <div className="mb-12 relative inline-block">
               <div className="absolute inset-0 bg-accent/20 blur-[100px] rounded-full" />
-              <img 
-                src="/logo.png" 
-                alt="Huyền Sĩ Logo" 
-                className="relative z-10 max-w-full md:max-w-3xl mx-auto rounded-2xl shadow-[0_0_50px_rgba(0,0,0,0.3)] border border-white/10" 
-                referrerPolicy="no-referrer"
-              />
             </div>
             
             <span className="inline-block px-4 py-1 border border-accent/30 rounded-full text-accent text-xs tracking-[0.3em] uppercase mb-6 font-semibold">
@@ -167,6 +176,96 @@ export default function App() {
               <h3 className="serif text-2xl font-semibold mb-4">Không mê tín, chung chung</h3>
               <p className="text-ink/60 leading-relaxed">Tôi từ chối những lời phán vô căn cứ. Mỗi lời luận giải đều đi kèm với giải pháp thực tế cho cuộc sống của bạn.</p>
             </motion.div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Cong Than Bat Tu Banner */}
+      <section id="cong-than" className="py-24 relative overflow-hidden bg-ink text-paper">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
+        </div>
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <motion.div {...fadeIn} className="bg-white/5 backdrop-blur-sm border border-accent/20 rounded-[3rem] p-8 md:p-16">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <span className="inline-block px-4 py-1 bg-accent text-white rounded-full text-[10px] tracking-[0.3em] uppercase mb-6 font-bold">
+                  Bản nâng cấp cao cấp
+                </span>
+                <h2 className="serif text-4xl md:text-5xl font-light mb-8 leading-tight">
+                  🔮 DỊCH VỤ XEM <br />
+                  <span className="text-accent italic">CÔNG THẦN BÁT TỰ</span>
+                </h2>
+                <div className="space-y-6 text-paper/70 leading-relaxed">
+                  <p>Trong Bát Tự Manh Phái, <span className="text-accent font-bold">“Công Thần”</span> không phải khái niệm cơ bản như Dụng Thần.</p>
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 mt-1">👉</div>
+                    <p>Nếu Dụng Thần chỉ dừng ở mức Ngũ Hành (Kim – Mộc – Thủy – Hỏa – Thổ)</p>
+                  </div>
+                  <div className="flex gap-4 items-start">
+                    <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 mt-1">👉</div>
+                    <p>Thì Công Thần đi sâu hơn: Xác định Thiên Can/Địa Chi thực sự giúp bạn phát triển, chỉ ra <span className="text-white font-bold">“điểm kích hoạt thành công”</span>.</p>
+                  </div>
+                  <p className="italic text-accent">Nói đơn giản: Đây là thứ giúp bạn bật lên trong tiền bạc – công danh – tình cảm.</p>
+                </div>
+              </div>
+
+              <div className="space-y-8">
+                <div className="bg-white/10 p-8 rounded-3xl border border-white/10">
+                  <h4 className="font-bold text-accent mb-4 flex items-center gap-2">
+                    <AlertTriangle size={20} />
+                    Vì sao ít người xem được?
+                  </h4>
+                  <p className="text-sm text-paper/60 leading-relaxed mb-4">
+                    Việc tìm Công Thần đòi hỏi phân tích toàn bộ cấu trúc lá số, đối chiếu Đại Vận – Lưu Niên và hiểu sâu logic Manh Phái thực chiến.
+                  </p>
+                  <div className="space-y-2">
+                    <div className="flex items-center gap-2 text-xs text-paper/80">
+                      <Check size={14} className="text-accent" /> Phân tích cấu trúc lá số
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-paper/80">
+                      <Check size={14} className="text-accent" /> Đối chiếu Đại Vận - Lưu Niên
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-accent/10 p-8 rounded-3xl border border-accent/20">
+                  <h4 className="font-bold text-white mb-2">Bạn nhận được gì?</h4>
+                  <p className="text-sm text-paper/80 mb-4 italic">1 file tài liệu chi tiết bao gồm nhiều vấn đề:</p>
+                  <ul className="space-y-3 text-sm text-paper/70">
+                    <li className="flex items-start gap-2">
+                      <Check size={14} className="text-accent mt-1 shrink-0" /> 
+                      <span>Công Thần của bạn là Thiên Can / Địa Chi nào</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={14} className="text-accent mt-1 shrink-0" /> 
+                      <span>Cách kích hoạt Công Thần trong đời sống thực tế:</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={14} className="text-accent mt-1 shrink-0" /> 
+                      <span>Trang phục ăn uống</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check size={14} className="text-accent mt-1 shrink-0" /> 
+                      <span>Đối tác, nhân sự</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-4">
+                  <div>
+                    <p className="text-xs uppercase tracking-widest text-paper/40 line-through">899.000 VNĐ</p>
+                    <p className="text-4xl font-bold text-accent">199.000 <span className="text-xl font-normal opacity-50">VNĐ</span></p>
+                  </div>
+                  <a href="https://zalo.me/0965414632" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-accent text-white px-10 py-4 rounded-full font-bold hover:scale-105 transition-transform shadow-xl shadow-accent/30 text-center">
+                    Xem Công Thần ngay
+                  </a>
+                </div>
+                <p className="text-[10px] text-center text-paper/30 italic">
+                  * Dành cho người đã xem Bát Tự tổng quát và muốn "kích hoạt" vận mệnh.
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
