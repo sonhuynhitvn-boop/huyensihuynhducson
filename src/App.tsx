@@ -20,7 +20,12 @@ import {
   Target,
   Check,
   AlertTriangle,
-  Facebook
+  Facebook,
+  Home,
+  Building2,
+  ShoppingBag,
+  MapPin,
+  Layers
 } from "lucide-react";
 
 const fadeIn = {
@@ -79,7 +84,8 @@ export default function App() {
           </div>
           <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
             <a href="#philosophy" className="hover:text-accent transition-colors">Triết lý</a>
-            <a href="#pricing" className="hover:text-accent transition-colors">Dịch vụ</a>
+            <a href="#pricing" className="hover:text-accent transition-colors">Bát Tự</a>
+            <a href="#fengshui" className="hover:text-accent transition-colors">Phong Thủy</a>
             <a href="#training" className="hover:text-accent transition-colors">Đào tạo</a>
             <a href="#workflow" className="hover:text-accent transition-colors">Nguyên tắc</a>
             <a href="#about" className="hover:text-accent transition-colors">Về tôi</a>
@@ -390,6 +396,179 @@ export default function App() {
               Tham gia nhóm chat cộng đồng <ArrowRight size={20} />
             </a>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Deep Feng Shui Services Section */}
+      <section id="fengshui" className="py-32 bg-white border-y border-accent/5">
+        <div className="max-w-7xl mx-auto px-6">
+          <motion.div {...fadeIn} className="text-center mb-20">
+            <span className="text-accent text-xs tracking-[0.4em] uppercase font-bold mb-4 block">Tư vấn chuyên sâu</span>
+            <h2 className="serif text-4xl md:text-6xl font-light mb-8">
+              🔮 PROFILE DỊCH VỤ <br />
+              <span className="text-accent italic">PHONG THỦY CHUYÊN SÂU</span>
+            </h2>
+            <p className="serif text-xl italic text-ink/70 max-w-3xl mx-auto leading-relaxed">
+              “Bạn không chỉ cần đặt đúng hướng... <br className="hidden md:block" />
+              Bạn cần kích hoạt đúng vận – đúng thời – đúng người.”
+            </p>
+          </motion.div>
+
+          {/* Methodologies */}
+          <div className="mb-24">
+            <h3 className="serif text-3xl font-semibold mb-12 text-center flex items-center justify-center gap-4">
+              <span className="w-12 h-px bg-accent/30" />
+              ⚙️ Pháp môn áp dụng
+              <span className="w-12 h-px bg-accent/30" />
+            </h3>
+            <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+              {[
+                { 
+                  title: "Loan Đầu", 
+                  icon: <MapPin size={24} />, 
+                  desc: "Phân tích hình thế đất, đường xá, dòng chảy và môi trường xung quanh để nhận diện cát hung ngoại cảnh." 
+                },
+                { 
+                  title: "Huyền Không", 
+                  icon: <Layers size={24} />, 
+                  desc: "Xác định vận khí theo thời gian (Vận 9), bố trí các cung chức năng để kích tài và hóa giải sát khí." 
+                },
+                { 
+                  title: "Mai Hoa Dịch Số", 
+                  icon: <Zap size={24} />, 
+                  desc: "Đoán nhanh cát hung theo thời điểm, ứng dụng trong các quyết định mua bán, thuê mướn hoặc đầu tư." 
+                },
+                { 
+                  title: "Kỳ Môn Độn Giáp", 
+                  icon: <Clock size={24} />, 
+                  desc: "Chọn thời điểm vàng để khai trương, ký hợp đồng, mở cửa hàng và định vị phương vị cát lợi theo giờ." 
+                },
+                { 
+                  title: "Bát Tự Tứ Trụ", 
+                  icon: <Brain size={24} />, 
+                  desc: "Cá nhân hóa phong thủy dựa trên Dụng Thần của mệnh chủ, không áp dụng công thức chung máy móc." 
+                }
+              ].map((item, i) => (
+                <motion.div key={i} variants={fadeIn} className="p-6 rounded-3xl bg-paper border border-accent/5 hover:border-accent/20 transition-all group">
+                  <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-4 group-hover:scale-110 transition-transform">
+                    {item.icon}
+                  </div>
+                  <h4 className="font-bold mb-2 text-ink">{item.title}</h4>
+                  <p className="text-xs text-ink/60 leading-relaxed">{item.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Services Provided */}
+          <div className="grid lg:grid-cols-4 gap-8 mb-24">
+            {[
+              {
+                title: "Nhà ở",
+                icon: <Home size={32} />,
+                items: ["Xem hướng & bố trí phòng", "Đặt bếp, giường, bàn làm việc", "Kích hoạt tài khố giữ tiền"]
+              },
+              {
+                title: "Công ty - Văn phòng",
+                icon: <Building2 size={32} />,
+                items: ["Bố trí phòng lãnh đạo, kế toán", "Định vị bàn làm việc theo mệnh", "Tăng hiệu suất & ổn định nhân sự"]
+              },
+              {
+                title: "Mặt bằng kinh doanh",
+                icon: <ShoppingBag size={32} />,
+                items: ["Chọn mặt bằng hợp mệnh/vận", "Bố trí quầy thu ngân, lối đi", "Kích hoạt dòng tiền & chốt đơn"]
+              },
+              {
+                title: "Chọn ngày giờ",
+                icon: <Calendar size={32} />,
+                items: ["Động thổ, xây dựng", "Khai trương, nhập trạch", "Ký hợp đồng, đầu tư"]
+              }
+            ].map((service, i) => (
+              <motion.div key={i} variants={fadeIn} className="bg-white p-8 rounded-[2.5rem] border border-accent/10 shadow-sm hover:shadow-md transition-shadow">
+                <div className="text-accent mb-6">{service.icon}</div>
+                <h4 className="serif text-2xl font-semibold mb-6">{service.title}</h4>
+                <ul className="space-y-3">
+                  {service.items.map((item, j) => (
+                    <li key={j} className="flex items-start gap-2 text-sm text-ink/70">
+                      <Check size={14} className="text-accent mt-1 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Unique Values */}
+          <motion.div {...fadeIn} className="bg-ink text-paper p-10 md:p-16 rounded-[3rem] mb-24 relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -mr-32 -mt-32" />
+            <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+              <div>
+                <h3 className="serif text-3xl md:text-4xl font-light mb-6">🎯 Giá trị khác biệt</h3>
+                <p className="text-paper/60 leading-relaxed mb-8">
+                  Tôi không xem phong thủy đại trà hay áp dụng máy móc theo sách vở. Giải pháp được đưa ra là sự kết hợp nhuần nhuyễn giữa Mệnh – Vận – Thời – Không gian.
+                </p>
+                <div className="grid grid-cols-2 gap-4">
+                  {["Không đại trà", "Không máy móc", "Cá nhân hóa", "Thực tế & dễ dùng"].map((val, i) => (
+                    <div key={i} className="flex items-center gap-2 text-sm text-paper/80">
+                      <Star size={14} className="text-accent" /> {val}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="bg-white/5 p-8 rounded-3xl border border-white/10 italic text-accent text-lg leading-relaxed">
+                “Không chỉ là ngày đẹp chung, <br /> mà là ngày đẹp riêng cho chính bạn.”
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Consultation Process */}
+          <div>
+            <h3 className="serif text-3xl font-semibold mb-16 text-center">📩 Hình thức tư vấn</h3>
+            <div className="grid md:grid-cols-4 gap-8 relative">
+              {/* Connector Line */}
+              <div className="hidden md:block absolute top-12 left-0 w-full h-px bg-accent/20 -z-0" />
+              
+              {[
+                {
+                  step: "01",
+                  title: "Tiếp nhận thông tin",
+                  desc: "Gửi sơ đồ mặt bằng, hình ảnh thực tế và yêu cầu cụ thể để tôi đánh giá sơ bộ."
+                },
+                {
+                  step: "02",
+                  title: "Khảo sát thực tế",
+                  desc: "Đo đạc khí trường, kiểm tra Loan Đầu và môi trường xung quanh tại công trình."
+                },
+                {
+                  step: "03",
+                  title: "Tư vấn & Triển khai",
+                  desc: "Đưa ra phương án bố trí chi tiết (cửa, bếp, giường...) và chọn ngày giờ phù hợp."
+                },
+                {
+                  step: "04",
+                  title: "Hỗ trợ sau tư vấn",
+                  desc: "Đồng hành điều chỉnh khi triển khai thực tế và giải đáp các vấn đề phát sinh."
+                }
+              ].map((item, i) => (
+                <motion.div key={i} variants={fadeIn} className="relative z-10 text-center">
+                  <div className="w-24 h-24 bg-paper border-4 border-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg text-accent text-2xl font-bold serif italic">
+                    {item.step}
+                  </div>
+                  <h4 className="font-bold mb-3 text-ink">{item.title}</h4>
+                  <p className="text-sm text-ink/60 leading-relaxed px-4">{item.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+            <div className="mt-16 text-center">
+              <p className="text-sm text-ink/50 italic mb-8">
+                * Cam kết: Chi phí thực tế không vượt quá 20% so với báo giá dự kiến ban đầu.
+              </p>
+              <a href="#workflow" className="bg-accent text-white px-10 py-4 rounded-full font-medium hover:scale-105 transition-transform shadow-xl shadow-accent/30 inline-flex items-center gap-2">
+                Nhận tư vấn Phong Thủy <ArrowRight size={20} />
+              </a>
+            </div>
+          </div>
         </div>
       </section>
 
