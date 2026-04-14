@@ -116,7 +116,7 @@ export default function App() {
               <span className="italic text-accent">Huỳnh Đức Sơn</span>
             </h1>
             <p className="serif text-xl md:text-2xl italic text-ink/70 mb-12 max-w-2xl mx-auto leading-relaxed">
-              “Không nói điều bạn thích nghe – <br className="md:hidden" /> chỉ nói điều bạn cần biết.”
+              “Thấu hiểu mệnh lý – <br className="md:hidden" /> Kiến tạo tương lai.”
             </p>
             
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
@@ -157,24 +157,24 @@ export default function App() {
               <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-accent">
                 <Compass size={32} />
               </div>
-              <h3 className="serif text-2xl font-semibold mb-4">Luận quá khứ để chứng minh</h3>
-              <p className="text-ink/60 leading-relaxed">Mọi sự kiện đã qua đều để lại dấu vết. Tôi bắt đầu từ việc nghiệm lý quá khứ để xác thực độ chính xác của lá số.</p>
+              <h3 className="serif text-2xl font-semibold mb-4">Nghiệm lý quá khứ</h3>
+              <p className="text-ink/60 leading-relaxed">Mọi sự kiện đã qua đều để lại dấu vết. Tôi bắt đầu từ việc đối soát quá khứ để xác thực độ chính xác trước khi luận bàn tương lai.</p>
             </motion.div>
 
             <motion.div variants={fadeIn} className="text-center p-8 rounded-3xl hover:bg-paper transition-colors">
               <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-accent">
                 <Zap size={32} />
               </div>
-              <h3 className="serif text-2xl font-semibold mb-4">Phân tích rõ ràng, logic</h3>
-              <p className="text-ink/60 leading-relaxed">Vận mệnh không phải là sự ngẫu nhiên. Tôi giải mã các mối liên hệ ngũ hành một cách khoa học và có hệ thống.</p>
+              <h3 className="serif text-2xl font-semibold mb-4">Phân tích đa chiều</h3>
+              <p className="text-ink/60 leading-relaxed">Vận mệnh không phải là sự ngẫu nhiên. Tôi giải mã các tương tác Ngũ hành một cách khoa học, logic và có hệ thống.</p>
             </motion.div>
 
             <motion.div variants={fadeIn} className="text-center p-8 rounded-3xl hover:bg-paper transition-colors">
               <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-6 text-accent">
                 <ShieldCheck size={32} />
               </div>
-              <h3 className="serif text-2xl font-semibold mb-4">Không mê tín, chung chung</h3>
-              <p className="text-ink/60 leading-relaxed">Tôi từ chối những lời phán vô căn cứ. Mỗi lời luận giải đều đi kèm với giải pháp thực tế cho cuộc sống của bạn.</p>
+              <h3 className="serif text-2xl font-semibold mb-4">Giải pháp thực tiễn</h3>
+              <p className="text-ink/60 leading-relaxed">Nói không với những lời phán mơ hồ. Mỗi buổi luận giải đều đi kèm với những chỉ dẫn cụ thể để tối ưu hóa cuộc sống.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -197,16 +197,16 @@ export default function App() {
                   <span className="text-accent italic">CÔNG THẦN BÁT TỰ</span>
                 </h2>
                 <div className="space-y-6 text-paper/70 leading-relaxed">
-                  <p>Trong Bát Tự Manh Phái, <span className="text-accent font-bold">“Công Thần”</span> không phải khái niệm cơ bản như Dụng Thần.</p>
+                  <p>Trong Bát Tự Manh Phái, <span className="text-accent font-bold">“Công Thần”</span> là khái niệm cốt lõi vượt xa Dụng Thần thông thường.</p>
                   <div className="flex gap-4 items-start">
                     <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 mt-1">👉</div>
-                    <p>Nếu Dụng Thần chỉ dừng ở mức Ngũ Hành (Kim – Mộc – Thủy – Hỏa – Thổ)</p>
+                    <p>Dụng Thần chỉ dừng lại ở việc cân bằng Ngũ Hành (Kim – Mộc – Thủy – Hỏa – Thổ).</p>
                   </div>
                   <div className="flex gap-4 items-start">
                     <div className="w-6 h-6 rounded-full bg-accent/20 flex items-center justify-center text-accent shrink-0 mt-1">👉</div>
-                    <p>Thì Công Thần đi sâu hơn: Xác định Thiên Can/Địa Chi thực sự giúp bạn phát triển, chỉ ra <span className="text-white font-bold">“điểm kích hoạt thành công”</span>.</p>
+                    <p>Công Thần đi sâu vào bản chất: Xác định chính xác Thiên Can/Địa Chi nắm giữ <span className="text-white font-bold">“chìa khóa thành công”</span> của riêng bạn.</p>
                   </div>
-                  <p className="italic text-accent">Nói đơn giản: Đây là thứ giúp bạn bật lên trong tiền bạc – công danh – tình cảm.</p>
+                  <p className="italic text-accent">Hiểu đơn giản: Đây là đòn bẩy giúp bạn đột phá về Tài lộc – Công danh – Nhân duyên.</p>
                 </div>
               </div>
 
@@ -230,24 +230,24 @@ export default function App() {
                 </div>
 
                 <div className="bg-accent/10 p-8 rounded-3xl border border-accent/20">
-                  <h4 className="font-bold text-white mb-2">Bạn nhận được gì?</h4>
-                  <p className="text-sm text-paper/80 mb-4 italic">1 file tài liệu chi tiết bao gồm nhiều vấn đề:</p>
+                  <h4 className="font-bold text-white mb-2">Giá trị bạn nhận được:</h4>
+                  <p className="text-sm text-paper/80 mb-4 italic">Hồ sơ chi tiết giải mã các phương diện:</p>
                   <ul className="space-y-3 text-sm text-paper/70">
                     <li className="flex items-start gap-2">
                       <Check size={14} className="text-accent mt-1 shrink-0" /> 
-                      <span>Công Thần của bạn là Thiên Can / Địa Chi nào</span>
+                      <span>Xác định Thiên Can / Địa Chi đóng vai trò Công Thần.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check size={14} className="text-accent mt-1 shrink-0" /> 
-                      <span>Cách kích hoạt Công Thần trong đời sống thực tế:</span>
+                      <span>Phương pháp kích hoạt Công Thần trong đời sống.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check size={14} className="text-accent mt-1 shrink-0" /> 
-                      <span>Trang phục ăn uống</span>
+                      <span>Ứng dụng vào trang phục, màu sắc và thói quen sinh hoạt.</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <Check size={14} className="text-accent mt-1 shrink-0" /> 
-                      <span>Đối tác, nhân sự</span>
+                      <span>Lựa chọn đối tác, nhân sự phù hợp để trợ lực.</span>
                     </li>
                   </ul>
                 </div>
@@ -274,10 +274,14 @@ export default function App() {
       <section id="pricing" className="py-32 bg-paper relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-6">
           <motion.div {...fadeIn} className="text-center mb-20">
-            <h2 className="serif text-4xl md:text-6xl font-light mb-6">Vì sao mức giá là <span className="text-accent italic">1.000.000 VNĐ?</span></h2>
-            <p className="text-ink/60 max-w-2xl mx-auto leading-relaxed">
-              Tôi biết, bạn sẽ thấy rất nhiều mức giá khác nhau. Từ vài trăm nghìn đến hàng triệu đồng. 
-              Vậy tại sao tôi chọn con đường ở giữa?
+            <h2 className="serif text-4xl md:text-5xl font-light mb-8">
+              Luận giải Bát Tự chuyên sâu <br />
+              <span className="text-accent italic">1.000.000 VNĐ / Lá số</span>
+            </h2>
+            <p className="text-ink/70 max-w-4xl mx-auto leading-relaxed text-lg">
+              Phân tích vận trình chi tiết, tư vấn 1-1 không giới hạn câu hỏi về các phương diện: 
+              <span className="font-semibold text-ink"> Đầu tư - Kinh doanh, Tài lộc, Sự nghiệp, Tình duyên, Gia đạo, Sức khỏe</span> (cảnh báo các nguy cơ tiềm ẩn), 
+              <span className="font-semibold text-ink"> Phong thủy bản mệnh</span>, hóa giải vận hạn và kích hoạt thiên thời - địa lợi.
             </p>
           </motion.div>
 
@@ -290,13 +294,13 @@ export default function App() {
                   Không làm "xem cho có"
                 </h3>
                 <div className="space-y-4 text-ink/70 leading-relaxed">
-                  <p>Ở mức giá thấp, phần lớn là người mới học hoặc luận giải phụ thuộc quá nhiều vào tài liệu và AI.</p>
-                  <p className="font-medium text-ink">Bát Tự không phải “bói hên xui” hay “lên đồng phán bừa”.</p>
-                  <p>Đây là một hệ thống cần kiến thức nền tảng sâu và khả năng bóc tách như cách một bác sĩ đọc bệnh án: có logic – có đối chiếu – có kiểm chứng.</p>
+                  <p>Ở mức giá thấp, bạn thường gặp những người mới học hoặc luận giải phụ thuộc hoàn toàn vào tài liệu rập khuôn và AI.</p>
+                  <p className="font-medium text-ink">Bát Tự không phải là bộ môn “bói toán hên xui”.</p>
+                  <p>Đây là một hệ thống đòi hỏi kiến thức nền tảng sâu rộng và khả năng bóc tách logic như một bác sĩ đọc bệnh án: có đối chiếu, có kiểm chứng và có hệ thống.</p>
                   <p className="italic border-l-2 border-accent/20 pl-4 py-2">
-                    "Phải luận đúng quá khứ – thì mới có cơ sở nói về tương lai. Nếu quá khứ còn sai, thì mọi dự đoán phía sau đều không có giá trị."
+                    "Phải luận đúng quá khứ – mới có cơ sở nói về tương lai. Nếu quá khứ còn sai, mọi dự đoán phía sau đều vô nghĩa."
                   </p>
-                  <p>Tôi không cho phép mình phán nhanh, nói đại hay “tùy duyên trúng sai”. Và điều đó không thể nằm trong một mức giá “xem cho có”.</p>
+                  <p>Tôi không cho phép mình phán nhanh, nói đại hay “tùy duyên trúng sai”. Giá trị thật không thể nằm trong một mức giá “xem cho có”.</p>
                 </div>
               </div>
               <div className="order-1 md:order-2 rounded-3xl overflow-hidden aspect-video bg-accent/5 flex items-center justify-center border border-accent/10">
@@ -360,18 +364,18 @@ export default function App() {
 
           <div className="grid md:grid-cols-2 gap-12 mb-16">
             <motion.div {...fadeIn} className="p-10 rounded-[3rem] bg-paper border border-accent/5">
-              <h3 className="serif text-2xl font-semibold mb-6">Kinh nghiệm đời thực</h3>
+              <h3 className="serif text-2xl font-semibold mb-6">Trải nghiệm thực tiễn</h3>
               <div className="space-y-4 text-ink/70 leading-relaxed">
-                <p>Ngoài hơn 5 năm học thuật, tôi còn có <span className="font-bold text-accent">10 năm kinh nghiệm</span> trong kinh doanh và quản lý nhân sự.</p>
-                <p>Điều này giúp tôi nhìn ra nguyên nhân gốc rễ và đưa ra hướng giải quyết thực tế, đặc biệt ở các khía cạnh: <span className="italic">Tài chính, Kinh doanh, Sự nghiệp.</span></p>
+                <p>Bên cạnh 5 năm nghiên cứu học thuật, tôi sở hữu <span className="font-bold text-accent">10 năm kinh nghiệm</span> trong lĩnh vực kinh doanh và quản trị nhân sự.</p>
+                <p>Điều này giúp tôi thấu hiểu gốc rễ vấn đề và đưa ra giải pháp thực tế, đặc biệt trong các khía cạnh: <span className="italic">Tài chính, Vận hành doanh nghiệp và Định hướng sự nghiệp.</span></p>
               </div>
             </motion.div>
 
             <motion.div {...fadeIn} className="p-10 rounded-[3rem] bg-paper border border-accent/5">
-              <h3 className="serif text-2xl font-semibold mb-6">Xem đúng chưa đủ – Phải có giải pháp</h3>
+              <h3 className="serif text-2xl font-semibold mb-6">Luận đúng là chưa đủ</h3>
               <div className="space-y-4 text-ink/70 leading-relaxed">
-                <p>Xem xong mà để đó thì không có giá trị. Tôi không làm kiểu "nói cho hay" rồi để bạn tự xoay sở.</p>
-                <p>Tôi làm để bạn <span className="font-bold text-accent">Hiểu – và Làm được</span>. Giúp bạn tìm ra nội lực và giải pháp thực sự để thay đổi cuộc đời mình.</p>
+                <p>Biết mệnh mà không biết cách ứng biến thì việc xem cũng vô ích. Tôi không làm kiểu "nói cho hay" rồi để bạn tự xoay sở.</p>
+                <p>Mục tiêu của tôi là giúp bạn <span className="font-bold text-accent">Hiểu – Chấp nhận – Hành động</span>. Tìm ra nội lực thực sự để làm chủ vận mệnh chính mình.</p>
               </div>
             </motion.div>
           </div>
@@ -402,16 +406,16 @@ export default function App() {
             <motion.div {...fadeIn} className="lg:col-span-2 space-y-12">
               <div className="bg-white p-10 md:p-16 rounded-[3rem] border border-accent/5 shadow-xl relative overflow-hidden">
                 <div className="absolute top-0 right-0 bg-accent text-white px-8 py-2 rounded-bl-3xl font-bold text-sm tracking-widest uppercase">
-                  Khóa học thực chiến
+                  Đào tạo thực chiến
                 </div>
                 
-                <h3 className="serif text-3xl font-semibold mb-8">🔥 Khóa học Bát Tự Manh Phái <br /><span className="text-xl text-ink/50 font-normal">(Sơ cấp → Trung cấp)</span></h3>
+                <h3 className="serif text-3xl font-semibold mb-8">🔥 Khóa học Bát Tự Manh Phái <br /><span className="text-xl text-ink/50 font-normal">(Từ cơ bản đến chuyên sâu)</span></h3>
                 
                 <div className="grid sm:grid-cols-2 gap-8 mb-12">
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 text-ink/70">
                       <Clock className="text-accent" size={20} />
-                      <span>Thời lượng: <span className="font-bold text-ink">12 tháng</span></span>
+                      <span>Thời lượng: <span className="font-bold text-ink">12 tháng đồng hành</span></span>
                     </div>
                     <div className="flex items-center gap-3 text-ink/70">
                       <Calendar className="text-accent" size={20} />
@@ -419,17 +423,17 @@ export default function App() {
                     </div>
                     <div className="flex items-center gap-3 text-ink/70">
                       <BookOpen className="text-accent" size={20} />
-                      <span>Tổng: <span className="font-bold text-ink">50 modules</span> (Nền tảng → Thực chiến)</span>
+                      <span>Chương trình: <span className="font-bold text-ink">50 chuyên đề</span> (Lý thuyết & Thực hành)</span>
                     </div>
                   </div>
                   <div className="space-y-4">
                     <div className="flex items-center gap-3 text-ink/70">
                       <Zap className="text-accent" size={20} />
-                      <span>Hình thức: <span className="font-bold text-ink">Online & Offline (Linh hoạt)</span></span>
+                      <span>Hình thức: <span className="font-bold text-ink">Online (Zoom) & Offline tại TPHCM</span></span>
                     </div>
                     <div className="flex items-center gap-3 text-ink/70">
                       <Star className="text-accent" size={20} />
-                      <span>Học xong: <span className="font-bold text-ink">Tự luận – Kiểm chứng – Hành nghề</span></span>
+                      <span>Mục tiêu: <span className="font-bold text-ink">Tự luận – Kiểm chứng – Hành nghề chuẩn mực</span></span>
                     </div>
                   </div>
                 </div>
@@ -569,17 +573,17 @@ export default function App() {
 
           <motion.div {...fadeIn} className="space-y-8 text-lg md:text-xl font-light leading-relaxed text-paper/80">
             <p>
-              Làm huyền học mà không giữ đạo, thì sớm muộn cũng sai đường. 
-              Tôi có 10 phần, tôi chỉ giữ lại 5 phần cho bản thân để duy trì cuộc sống và đam mê.
+              Làm huyền học mà không giữ đạo, ắt sẽ lạc lối. 
+              Tôi quan niệm rằng kiến thức và thu nhập từ nghề cần được chia sẻ để tạo sự cân bằng.
             </p>
             <div className="bg-white/5 border-l-4 border-accent p-8 rounded-r-2xl">
-              <p className="italic mb-4 text-paper">"5 phần còn lại dùng để làm thiện – tích phước."</p>
+              <p className="italic mb-4 text-paper">"5 phần giữ lại cho đời – 5 phần dành để tích phước."</p>
               <p className="text-sm text-paper/60">
-                Bởi dù tự tin đến đâu, huyền học vẫn tồn tại sai số bất khả kháng. 
-                Tôi chọn cách tích phước để tạo ứng kỳ tốt cho chính tôi khi luận giải và cho bạn khi tiếp nhận.
+                Bởi dù tinh thông đến đâu, huyền học vẫn tồn tại những biến số vượt ngoài tầm kiểm soát. 
+                Tôi chọn cách gieo nhân lành để tạo trợ lực tốt nhất cho chính mình và cho những người tin tưởng tìm đến tôi.
               </p>
             </div>
-            <p className="text-center pt-8 serif text-2xl text-accent">“Phước chủ – May thầy”</p>
+            <p className="text-center pt-8 serif text-2xl text-accent">“Phước chủ – Lộc thầy”</p>
           </motion.div>
         </div>
       </section>
@@ -594,36 +598,36 @@ export default function App() {
                 <div className="absolute -top-4 -right-4 bg-accent text-white w-12 h-12 rounded-full flex items-center justify-center font-bold text-xl shadow-lg">
                   2
                 </div>
-                <p className="text-xl serif italic mb-4">Tối đa 1 ngày tôi chỉ nhận 2 lá số</p>
+                <p className="text-xl serif italic mb-4">Tối đa 02 lá số mỗi ngày</p>
                 <p className="text-ink/60 leading-relaxed">
-                  Mỗi lá số cần tập trung cao độ, suy luận, nghiệm lý và giữ trạng thái tinh thần ổn định. 
-                  Tôi không "làm giá", tôi chỉ hiểu rõ giới hạn để làm đúng và có trách nhiệm.
+                  Mỗi lá số đều đòi hỏi sự tập trung tuyệt đối để suy luận và nghiệm lý. 
+                  Tôi giới hạn số lượng để đảm bảo mỗi khách hàng đều nhận được sự luận giải thấu đáo và trách nhiệm nhất.
                 </p>
               </div>
             </motion.div>
 
             <motion.div {...fadeIn}>
-              <h2 className="serif text-4xl font-light mb-8">Giá trị từ trải nghiệm</h2>
+              <h2 className="serif text-4xl font-light mb-8">Giá trị từ sự tích lũy</h2>
               <div className="space-y-6">
                 <div className="flex gap-6">
                   <div className="text-accent font-bold text-3xl serif">5+</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Năm nghiên cứu</h4>
-                    <p className="text-sm text-ink/60">Học và nghiên cứu liên tục về Bát Tự và Phong Thủy.</p>
+                    <h4 className="font-semibold mb-1">Năm nghiên cứu chuyên sâu</h4>
+                    <p className="text-sm text-ink/60">Học thuật bài bản về Bát Tự Manh Phái và Phong Thủy thực chiến.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div className="text-accent font-bold text-3xl serif">2</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Năm luận giải miễn phí</h4>
-                    <p className="text-sm text-ink/60">Tích lũy thực tế từ hàng trăm trường hợp khác nhau.</p>
+                    <h4 className="font-semibold mb-1">Năm luận giải nghiệm lý</h4>
+                    <p className="text-sm text-ink/60">Tích lũy kinh nghiệm thực tế từ hàng trăm lá số đa dạng.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
                   <div className="text-accent font-bold text-3xl serif">∞</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Đồng hành trọn đời</h4>
-                    <p className="text-sm text-ink/60">Không chỉ là một buổi xem, mà là một hành trình hỗ trợ.</p>
+                    <h4 className="font-semibold mb-1">Đồng hành dài hạn</h4>
+                    <p className="text-sm text-ink/60">Không chỉ dừng lại ở một buổi xem, mà là sự hỗ trợ xuyên suốt hành trình của bạn.</p>
                   </div>
                 </div>
               </div>
@@ -638,13 +642,13 @@ export default function App() {
           <div className="grid md:grid-cols-2 gap-16 items-start">
             {/* Principles */}
             <motion.div {...fadeIn}>
-              <h2 className="serif text-4xl md:text-5xl font-light mb-10 italic text-accent">Nguyên tắc làm việc</h2>
+              <h2 className="serif text-4xl font-light mb-10 italic text-accent">Nguyên tắc làm việc</h2>
               <div className="space-y-6">
                 {[
-                  "Anh/chị /em/ cô / chú muốn đặt lịch hãy tìm hiểu thật kỹ tôi trước khi quyết định.",
-                  "Luận giải trực tiếp hoặc qua Zoom. Chuyển khoản trước để xác nhận lịch hẹn.",
-                  "Nếu muốn đặt lịch, vui lòng cho tôi biết ngày giờ phù hợp trước ít nhất 2 ngày.",
-                  "Kết bạn <a href='https://zalo.me/0965414632' target='_blank' rel='noopener noreferrer' class='text-accent font-bold underline underline-offset-4'>Zalo</a>/<a href='https://www.facebook.com/ucson.52637' target='_blank' rel='noopener noreferrer' class='text-accent font-bold underline underline-offset-4'>Facebook</a> để gửi thông tin chuyển khoản và lịch mong muốn để tôi sắp xếp và chốt hẹn."
+                  "Quý anh chị vui lòng tìm hiểu kỹ về phong cách luận giải của tôi trước khi đặt lịch.",
+                  "Hình thức luận giải: Trực tiếp (tại TPHCM) hoặc Online qua Zoom. Vui lòng hoàn tất chuyển khoản để xác nhận lịch hẹn.",
+                  "Để đảm bảo chất lượng, vui lòng đặt lịch trước ít nhất 02 ngày làm việc.",
+                  "Vui lòng kết nối qua <a href='https://zalo.me/0965414632' target='_blank' rel='noopener noreferrer' class='text-accent font-bold underline underline-offset-4'>Zalo</a> hoặc <a href='https://www.facebook.com/ucson.52637' target='_blank' rel='noopener noreferrer' class='text-accent font-bold underline underline-offset-4'>Facebook</a> để gửi thông tin và chốt thời gian luận giải."
                 ].map((text, i) => (
                   <div key={i} className="flex gap-4 items-start bg-white p-6 rounded-2xl border border-accent/5 shadow-sm">
                     <div className="w-8 h-8 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0 font-serif italic">
@@ -697,11 +701,11 @@ export default function App() {
       <section className="py-24 bg-paper">
         <div className="max-w-3xl mx-auto px-6 text-center">
           <motion.div {...fadeIn}>
-            <h2 className="serif text-3xl md:text-4xl font-light mb-8">Cơ sở để bạn tin tưởng tôi?</h2>
+            <h2 className="serif text-3xl md:text-4xl font-light mb-8">Cơ sở để bạn đặt niềm tin?</h2>
             <p className="text-ink/60 mb-12 leading-relaxed italic">
-              Thẳng thắn: Không có bảo chứng tuyệt đối. <br />
-              Cách duy nhất là tự tìm hiểu, xem cách tôi chia sẻ và cảm nhận xem có phù hợp hay không. 
-              Mọi thứ đều là hữu duyên.
+              Thẳng thắn mà nói: Không có sự bảo chứng nào tuyệt đối hơn trải nghiệm của chính bạn. <br />
+              Hãy dành thời gian tìm hiểu cách tôi chia sẻ kiến thức và cảm nhận sự tương đồng trong tư duy. 
+              Mọi sự kết nối đều bắt đầu từ chữ "Duyên".
             </p>
             <div className="h-px w-24 bg-accent/30 mx-auto mb-12" />
           </motion.div>
@@ -717,10 +721,10 @@ export default function App() {
             </div>
             
             <h2 className="serif text-4xl md:text-6xl font-light mb-12 leading-tight">
-              Nếu bạn cần một người đi cùng bạn trên hành trình <br />
-              <span className="text-accent italic">hiểu và thay đổi cuộc đời...</span>
+              Nếu bạn đang tìm kiếm một người đồng hành <br />
+              <span className="text-accent italic">để thấu hiểu và làm chủ vận mệnh...</span>
             </h2>
-            <p className="text-xl serif italic text-ink/70 mb-12">Tôi ở đây.</p>
+            <p className="text-xl serif italic text-ink/70 mb-12">Tôi luôn sẵn sàng lắng nghe.</p>
             
             <a href="#workflow" className="bg-accent text-white px-12 py-5 rounded-full text-xl font-medium hover:scale-105 transition-transform shadow-2xl shadow-accent/40 mb-16 inline-block">
               Đặt lịch ngay
