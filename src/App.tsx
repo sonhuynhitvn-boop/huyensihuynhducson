@@ -676,11 +676,11 @@ export default function App() {
                   <p className="text-2xl font-bold text-gray-700 tracking-widest">039070393</p>
                 </div>
 
-                <div className="bg-white p-6 rounded-3xl border-2 border-gray-50 inline-block mb-8 shadow-inner">
+                <div className="bg-white p-4 rounded-2xl border border-gray-100 inline-block mb-8">
                   <img 
-                    src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021138580010A0000007270128000697044101140390703930208QRIBFTTA5303704540810000005802VN620063048E6A" 
+                    src="https://img.vietqr.io/image/VIB-039070393-qr_only.png?accountName=HUYNH%20TRONG%20SON" 
                     alt="QR Thanh toán VIB" 
-                    className="w-64 h-64 md:w-72 md:h-72 object-contain"
+                    className="w-64 h-64 md:w-72 md:h-72"
                   />
                 </div>
 
