@@ -25,7 +25,12 @@ import {
   Building2,
   ShoppingBag,
   MapPin,
-  Layers
+  Layers,
+  Coins,
+  HeartHandshake,
+  Sparkles,
+  TrendingUp,
+  RefreshCw
 } from "lucide-react";
 
 const fadeIn = {
@@ -186,85 +191,303 @@ export default function App() {
         </div>
       </section>
 
-      {/* The "Why 1M" Section */}
-      <section id="pricing" className="py-32 bg-paper relative overflow-hidden">
-        <div className="max-w-5xl mx-auto px-6">
+      {/* The "Luận Giải Bát Tự & Tư Vấn Vận Hạn" Section */}
+      <section id="pricing" className="py-32 bg-ink text-paper relative overflow-hidden border-y border-accent/10">
+        <div className="absolute inset-0 z-0 opacity-20 col-span-3">
+          <div className="absolute inset-0 bg-radial-gradient from-accent/15 to-transparent opacity-40" />
+          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-pulse" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <motion.div {...fadeIn} className="text-center mb-20">
-            <h2 className="serif text-4xl md:text-5xl font-light mb-8">
-              Luận giải Bát Tự chuyên sâu <br />
-              <span className="text-accent italic">1.000.000 VNĐ / Lá số</span>
+            <span className="inline-block px-4 py-1 border border-accent/30 rounded-full text-accent text-xs tracking-[0.3em] uppercase mb-6 font-semibold bg-accent/10">
+              Dịch Vụ Luận Giải
+            </span>
+            <h2 className="serif text-4xl md:text-6xl font-light mb-8">
+              Luận Giải Bát Tự & <br className="sm:hidden" /> <span className="text-accent italic">Tư Vấn Vận Hạn</span>
             </h2>
-            <p className="text-ink/70 max-w-4xl mx-auto leading-relaxed text-lg">
-              Phân tích vận trình chi tiết, tư vấn 1-1 không giới hạn câu hỏi về các phương diện: 
-              <span className="font-semibold text-ink"> Đầu tư - Kinh doanh, Tài lộc, Sự nghiệp, Tình duyên, Gia đạo, Sức khỏe</span> (cảnh báo các nguy cơ tiềm ẩn), 
-              <span className="font-semibold text-ink"> Phong thủy bản mệnh</span>, hóa giải vận hạn và kích hoạt thiên thời - địa lợi.
+            <p className="text-paper/70 max-w-3xl mx-auto leading-relaxed text-lg font-light">
+              Hiểu rõ vận trình, nhận diện cơ hội và xây dựng hướng đi phù hợp cho công việc, tài chính, tình cảm và cuộc sống.
             </p>
           </motion.div>
 
-          <div className="space-y-16">
-            {/* Point 1 */}
-            <motion.div {...fadeIn} className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="order-2 md:order-1">
-                <h3 className="serif text-3xl font-semibold mb-6 flex items-center gap-4">
-                  <span className="text-accent/30 text-5xl italic">01.</span>
-                  Không làm "xem cho có"
-                </h3>
-                <div className="space-y-4 text-ink/70 leading-relaxed">
-                  <p>Ở mức giá thấp, bạn thường gặp những người mới học hoặc luận giải phụ thuộc hoàn toàn vào tài liệu rập khuôn và AI.</p>
-                  <p className="font-medium text-ink">Bát Tự không phải là bộ môn “bói toán hên xui”.</p>
-                  <p>Đây là một hệ thống đòi hỏi kiến thức nền tảng sâu rộng và khả năng bóc tách logic như một bác sĩ đọc bệnh án: có đối chiếu, có kiểm chứng và có hệ thống.</p>
-                  <p className="italic border-l-2 border-accent/20 pl-4 py-2">
-                    "Phải luận đúng quá khứ – mới có cơ sở nói về tương lai. Nếu quá khứ còn sai, mọi dự đoán phía sau đều vô nghĩa."
-                  </p>
-                  <p>Tôi không cho phép mình phán nhanh, nói đại hay “tùy duyên trúng sai”. Giá trị thật không thể nằm trong một mức giá “xem cho có”.</p>
+          {/* Pricing Cards Grid - 2 columns on desktop, stacked on mobile */}
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch max-w-6xl mx-auto mb-24">
+            
+            {/* THẺ DỊCH VỤ 1: Gói Cơ Bản */}
+            <motion.div 
+              {...fadeIn} 
+              className="flex flex-col bg-white/5 backdrop-blur-md rounded-[2.5rem] border border-accent/20 hover:border-accent/40 shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
+            >
+              <div className="p-8 md:p-12 flex-1 flex flex-col">
+                <div className="mb-8">
+                  <span className="inline-block px-3 py-1 bg-accent/10 border border-accent/20 rounded-full text-accent text-xs font-medium mb-4">
+                    🎬 Phù hợp cho người muốn hiểu nhanh về lá số
+                  </span>
+                  <h3 className="serif text-3xl font-light text-white mb-4">
+                    Gói Cơ Bản <br />
+                    <span className="text-accent italic text-2xl">Luận Giải Video Cá Nhân</span>
+                  </h3>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-semibold text-white tracking-tight">300.000</span>
+                    <span className="text-lg text-accent font-medium">VNĐ</span>
+                  </div>
+                  <div className="h-px bg-white/10 w-full my-6" />
                 </div>
+
+                {/* Hình thức */}
+                <div className="mb-8 bg-accent/5 rounded-2xl p-5 border border-accent/10">
+                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-3 flex items-center gap-2">
+                    <Clock size={14} /> Hình thức & Thời gian
+                  </h4>
+                  <ul className="space-y-2 text-sm text-paper/80">
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                      Trả kết quả bằng video cá nhân hóa
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                      Thời gian hoàn thành: 2 – 3 ngày
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Nội dung */}
+                <div className="mb-8 flex-1">
+                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-4">
+                    🔮 Nội Dung Luận Giải
+                  </h4>
+                  <ul className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-3 text-sm text-paper/80">
+                    {[
+                      "Tài vận – Công việc",
+                      "Tình duyên – Hôn nhân",
+                      "Sức khỏe",
+                      "Xác định Dụng Thần Bát Tự",
+                      "Màu sắc phù hợp",
+                      "Hình tượng phù hợp",
+                      "Hướng phong thủy phù hợp",
+                      "Tổng quan đại vận hiện tại",
+                      "Tổng quan đại vận kế tiếp",
+                      "Chi tiết vận hạn 2 năm gần nhất",
+                      "Giải đáp tối đa 5 câu hỏi"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-start gap-2.5">
+                        <Check size={16} className="text-accent shrink-0 mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Khách hàng cần cung cấp */}
+                <div className="mb-8 bg-white/[0.02] border border-white/5 rounded-2xl p-5">
+                  <h4 className="text-xs uppercase tracking-wider text-paper/50 font-bold mb-3">
+                    📋 Thông tin cần cung cấp
+                  </h4>
+                  <ul className="grid grid-cols-2 gap-2 text-xs text-paper/60">
+                    {[
+                      "Ngày sinh dương lịch",
+                      "Tháng sinh dương lịch",
+                      "Năm sinh",
+                      "Giờ sinh",
+                      "5 câu hỏi cần giải",
+                      "Email / Zalo nhận"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-center gap-1.5">
+                        <span className="w-1 h-1 rounded-full bg-paper/40" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Hỗ trợ sau khi nhận */}
+                <p className="text-xs italic text-paper/50 leading-relaxed mb-8 border-l-2 border-accent/20 pl-4 py-1">
+                  💡 Hỗ trợ: Khách hàng có thể nhắn tin qua Zalo để hỏi thêm những nội dung chưa rõ trong phần luận giải.
+                </p>
               </div>
-              <div className="order-1 md:order-2 rounded-3xl overflow-hidden aspect-video bg-accent/5 flex items-center justify-center border border-accent/10">
-                 <BookOpen size={80} className="text-accent/20" />
+
+              {/* CTA Button */}
+              <div className="p-8 md:p-12 pt-0 col-span-3">
+                <a 
+                  href="https://zalo.me/0965414632" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full bg-transparent hover:bg-accent border border-accent text-accent hover:text-white py-4 rounded-full font-medium transition-all text-center block"
+                >
+                  Đăng Ký Gói Cơ Bản
+                </a>
               </div>
             </motion.div>
 
-            {/* Point 2 */}
-            <motion.div {...fadeIn} className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="rounded-3xl overflow-hidden aspect-video bg-accent/5 flex items-center justify-center border border-accent/10">
-                 <Star size={80} className="text-accent/20" />
+            {/* THẺ DỊCH VỤ 2: Gói Đồng Hành Chuyên Sâu */}
+            <motion.div 
+              {...fadeIn} 
+              className="flex flex-col bg-gradient-to-b from-accent/15 to-accent/5 backdrop-blur-md rounded-[2.5rem] border-2 border-accent hover:border-accent shadow-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-accent/10"
+            >
+              {/* Popular Tag */}
+              <div className="absolute top-5 right-5 bg-accent text-white text-[10px] uppercase tracking-widest font-bold py-1.5 px-4 rounded-full">
+                KHUYÊN DÙNG
               </div>
-              <div>
-                <h3 className="serif text-3xl font-semibold mb-6 flex items-center gap-4">
-                  <span className="text-accent/30 text-5xl italic">02.</span>
-                  Không xây dựng hào quang
-                </h3>
-                <div className="space-y-4 text-ink/70 leading-relaxed">
-                  <p>Tôi không chọn con đường xây dựng hình ảnh hào nhoáng, không chạy quảng cáo, không seeding.</p>
-                  <p>Vì vậy, tôi không cần tính thêm chi phí "hào quang" vào giá dịch vụ. Mức giá này phản ánh giá trị thật, không bị thổi phồng.</p>
+
+              <div className="p-8 md:p-12 flex-1 flex flex-col col-span-3">
+                <div className="mb-8">
+                  <div className="flex flex-col gap-2 mb-4">
+                    <span className="inline-block self-start px-3 py-1 bg-accent/20 border border-accent/30 rounded-full text-accent-light text-xs font-semibold">
+                      💎 Dịch vụ chuyên sâu và đồng hành lâu dài
+                    </span>
+                    <span className="inline-block self-start px-3 py-1 bg-red-500/10 border border-red-500/20 rounded-full text-red-500 text-xs font-semibold">
+                      ⚠️ Không làm "xem cho có"
+                    </span>
+                  </div>
+                  <h3 className="serif text-3xl font-light text-white mb-4">
+                    Gói Đồng Hành <br />
+                    <span className="text-accent italic text-2xl">Chuyên Sâu 2 Năm</span>
+                  </h3>
+                  <div className="flex items-baseline gap-2 mb-4">
+                    <span className="text-4xl font-semibold text-white tracking-tight">1.500.000</span>
+                    <span className="text-lg text-accent font-medium">VNĐ</span>
+                  </div>
+                  <div className="h-px bg-white/10 w-full my-6" />
                 </div>
+
+                {/* Nội dung */}
+                <div className="mb-8 flex-1">
+                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-4">
+                    🔮 Nội Dung Luận Giải Chuyên Sâu
+                  </h4>
+                  <ul className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-3 text-sm text-paper/80">
+                    {[
+                      "Đối chiếu vận hạn quá khứ",
+                      "Luận giải chuyên sâu toàn bộ lá số",
+                      "Giải thích các sự kiện đã và đang diễn ra",
+                      "Phân tích đại vận toàn bộ cuộc đời",
+                      "Chi tiết vận hạn 5 năm gần nhất",
+                      "Không giới hạn số lượng câu hỏi",
+                      "Tương tác trực tiếp đến khi hiểu rõ vấn đề",
+                      "Tư vấn cải vận thực tế",
+                      "Phong thủy nhà ở",
+                      "Phong thủy cá nhân",
+                      "Định hướng nghề nghiệp phù hợp",
+                      "Định hướng phát triển tài vận",
+                      "Hỗ trợ góc nhìn đầu tư kinh doanh",
+                      "Hỗ trợ định hướng khởi nghiệp",
+                      "Hỗ trợ lựa chọn ngành nghề phù hợp"
+                    ].map((item, index) => (
+                      <li key={index} className="flex items-start gap-2.5">
+                        <Check size={16} className="text-accent shrink-0 mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Cam kết đồng hành */}
+                <div className="mb-8 bg-white/[0.03] border border-accent/20 rounded-2xl p-5">
+                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-3 flex items-center gap-2">
+                    <HeartHandshake size={14} /> Cam kết đồng hành đặc biệt
+                  </h4>
+                  <ul className="space-y-2 text-sm text-paper/85">
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent font-bold mt-0.5">•</span>
+                      <span>Hỗ trợ giải đáp trong <strong>2 năm</strong> sau buổi luận giải</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-accent font-bold mt-0.5">•</span>
+                      <span>Hỗ trợ thêm <strong>2 lần</strong> luận quẻ Kinh Dịch Lục Hào cho các vấn đề quan trọng</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* CTA Button */}
+              <div className="p-8 md:p-12 pt-0">
+                <a 
+                  href="https://zalo.me/0965414632" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="w-full bg-accent hover:bg-accent/90 text-white py-4 rounded-full font-medium transition-all text-center block shadow-lg shadow-accent/20 hover:scale-[1.02] transform"
+                >
+                  Đăng Ký Gói Đồng Hành
+                </a>
               </div>
             </motion.div>
 
-            {/* Point 3 & 4 */}
-            <div className="grid md:grid-cols-2 gap-8">
-              <motion.div {...fadeIn} className="bg-white p-10 rounded-[2rem] border border-accent/5 shadow-sm">
-                <h3 className="serif text-2xl font-semibold mb-6 flex items-center gap-4">
-                  <span className="text-accent/30 text-4xl italic">03.</span>
-                  Chọn người phù hợp
-                </h3>
-                <p className="text-ink/60 leading-relaxed">
-                  Tôi không làm việc với những người xem cho vui hay tò mò nhất thời. Sự nghiêm túc cần bắt đầu từ chính quyết định đầu tư cho bản thân của bạn.
+          </div>
+
+          {/* SECTION CAM KẾT - Tặng Quẻ Kinh Dịch & Service Commitments */}
+          <div className="border-t border-white/5 pt-24">
+            <motion.div {...fadeIn} className="text-center mb-16">
+              <span className="inline-block px-4 py-1 bg-accent/10 border border-accent/20 rounded-full text-accent text-xs uppercase tracking-widest font-semibold mb-4">
+                Sự An Tâm Tuyệt Đối
+              </span>
+              <h3 className="serif text-3xl md:text-5xl font-light text-white">
+                Cam Kết <span className="text-accent italic">Dịch Vụ</span>
+              </h3>
+            </motion.div>
+
+            {/* 4 Cards with icons */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+              
+              {/* Card 1 */}
+              <motion.div 
+                variants={fadeIn} 
+                className="bg-white/[0.03] border border-white/5 p-8 rounded-3xl hover:bg-white/[0.05] transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-6">
+                  <RefreshCw size={24} />
+                </div>
+                <h4 className="font-bold text-lg text-white mb-3">Hoàn Tiền 100%</h4>
+                <p className="text-sm text-paper/60 leading-relaxed font-light">
+                  Nếu khách hàng không hài lòng trong 15 phút đầu tiên của buổi tư vấn, có thể yêu cầu dừng và hoàn tiền.
                 </p>
               </motion.div>
-              <motion.div {...fadeIn} className="bg-white p-10 rounded-[2rem] border border-accent/5 shadow-sm">
-                <h3 className="serif text-2xl font-semibold mb-6 flex items-center gap-4">
-                  <span className="text-accent/30 text-4xl italic">04.</span>
-                  Quá trình đồng hành
-                </h3>
-                <ul className="text-ink/60 space-y-3">
-                  <li className="flex items-center gap-2"><Clock size={16} className="text-accent" /> 60–90 phút (không giới hạn nếu cần)</li>
-                  <li className="flex items-center gap-2"><MessageCircle size={16} className="text-accent" /> Tương tác sâu, không phán nhanh</li>
-                  <li className="flex items-center gap-2"><Heart size={16} className="text-accent" /> Tiếp tục hỗ trợ giải đáp dài hạn</li>
-                </ul>
+
+              {/* Card 2 */}
+              <motion.div 
+                variants={fadeIn} 
+                className="bg-white/[0.03] border border-white/5 p-8 rounded-3xl hover:bg-white/[0.05] transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-6">
+                  <HeartHandshake size={24} />
+                </div>
+                <h4 className="font-bold text-lg text-white mb-3">Đồng Hành 2 Năm</h4>
+                <p className="text-sm text-paper/60 leading-relaxed font-light">
+                  Hỗ trợ giải đáp các vấn đề phát sinh sau buổi luận giải đảm bảo bạn luôn có định hướng vững vàng.
+                </p>
               </motion.div>
+
+              {/* Card 3 */}
+              <motion.div 
+                variants={fadeIn} 
+                className="bg-white/[0.03] border border-white/5 p-8 rounded-3xl hover:bg-white/[0.05] transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-6">
+                  <Sparkles size={24} />
+                </div>
+                <h4 className="font-bold text-lg text-white mb-3">Hỗ Trợ Kinh Dịch</h4>
+                <p className="text-sm text-paper/60 leading-relaxed font-light">
+                  Tặng 2 lần luận quẻ Kinh Dịch Lục Hào cho các quyết định, thời điểm quan trọng cần lựa chọn.
+                </p>
+              </motion.div>
+
+              {/* Card 4 */}
+              <motion.div 
+                variants={fadeIn} 
+                className="bg-white/[0.03] border border-white/5 p-8 rounded-3xl hover:bg-white/[0.05] transition-all duration-300"
+              >
+                <div className="w-12 h-12 bg-accent/10 rounded-2xl flex items-center justify-center text-accent mb-6">
+                  <TrendingUp size={24} />
+                </div>
+                <h4 className="font-bold text-lg text-white mb-3">Tư Vấn Thực Tế</h4>
+                <p className="text-sm text-paper/60 leading-relaxed font-light">
+                  Đưa ra góc nhìn khách quan, khoa học, thực tiễn có tính ứng dụng cao, nói không với mê tín rườm rà.
+                </p>
+              </motion.div>
+
             </div>
           </div>
+
         </div>
       </section>
 
