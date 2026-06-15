@@ -241,9 +241,9 @@ export default function App() {
                     <Clock size={14} /> Hình thức & Thời gian
                   </h4>
                   <ul className="space-y-2 text-sm text-paper/80">
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                      Trả kết quả bằng video cá nhân hóa
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
+                      <span>Không tương tác, luận giải 1 chiều trả kết quả bằng file + video luận giải cá nhân hóa</span>
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-accent" />
@@ -301,6 +301,16 @@ export default function App() {
                   </ul>
                 </div>
 
+                {/* Thông tin hỗ trợ đối chiếu lá số */}
+                <div className="mb-8 bg-accent/[0.02] border border-accent/10 rounded-2xl p-5 text-xs text-paper/70 leading-relaxed shadow-inner">
+                  <h5 className="font-semibold text-accent mb-2 flex items-center gap-1.5">
+                    🔍 Thông tin đối chiếu (không bắt buộc)
+                  </h5>
+                  <p>
+                    Để tăng độ chính xác khi luận giải, quý khách có thể cung cấp thêm một số thông tin thực tế như nghề nghiệp hiện tại, số lượng anh chị em hoặc các dấu mốc quan trọng trong cuộc đời. Thông tin này được dùng để đối chiếu với lá số, kiểm tra độ khớp của mệnh cục và hỗ trợ luận đoán vận trình tương lai chính xác hơn.
+                  </p>
+                </div>
+
                 {/* Hỗ trợ sau khi nhận */}
                 <p className="text-xs italic text-paper/50 leading-relaxed mb-8 border-l-2 border-accent/20 pl-4 py-1">
                   💡 Hỗ trợ: Khách hàng có thể nhắn tin qua Zalo để hỏi thêm những nội dung chưa rõ trong phần luận giải.
@@ -349,6 +359,19 @@ export default function App() {
                     <span className="text-lg text-accent font-medium">VNĐ</span>
                   </div>
                   <div className="h-px bg-white/10 w-full my-6" />
+                </div>
+
+                {/* Hình thức */}
+                <div className="mb-8 bg-accent/10 rounded-2xl p-5 border border-accent/20">
+                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-3 flex items-center gap-2">
+                    <Clock size={14} /> Hình thức & Tương tác
+                  </h4>
+                  <ul className="space-y-2 text-sm text-paper/80">
+                    <li className="flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                      <strong>Luận giải tương tác 1 vs 1</strong>
+                    </li>
+                  </ul>
                 </div>
 
                 {/* Nội dung */}
