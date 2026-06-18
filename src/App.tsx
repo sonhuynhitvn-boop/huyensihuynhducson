@@ -211,231 +211,201 @@ export default function App() {
             </p>
           </motion.div>
 
-          {/* Pricing Cards Grid - 2 columns on desktop, stacked on mobile */}
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch max-w-6xl mx-auto mb-24">
-            
-            {/* THẺ DỊCH VỤ 1: Gói Cơ Bản */}
+          {/* Detailed Single Premium Package Presentation */}
+          <div className="max-w-5xl mx-auto mb-24">
             <motion.div 
               {...fadeIn} 
-              className="flex flex-col bg-white/5 backdrop-blur-md rounded-[2.5rem] border border-accent/20 hover:border-accent/40 shadow-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1"
+              className="bg-gradient-to-br from-accent/15 via-white/[0.03] to-white/[0.01] backdrop-blur-md rounded-[2.5rem] border-2 border-accent shadow-2xl relative overflow-hidden transition-all duration-300 shadow-accent/5 hover:border-accent/40"
             >
-              <div className="p-8 md:p-12 flex-1 flex flex-col">
-                <div className="mb-8">
-                  <span className="inline-block px-3 py-1 bg-accent/10 border border-accent/20 rounded-full text-accent text-xs font-medium mb-4">
-                    🎬 Phù hợp cho người muốn hiểu nhanh về lá số
-                  </span>
-                  <h3 className="serif text-3xl font-light text-white mb-4">
-                    Gói Cơ Bản <br />
-                    <span className="text-accent italic text-2xl">Luận Giải Video Cá Nhân</span>
-                  </h3>
-                  <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-4xl font-semibold text-white tracking-tight">300.000</span>
-                    <span className="text-lg text-accent font-medium">VNĐ</span>
+              {/* Gold Ribbon / Flare background decoration */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-accent/10 rounded-full blur-3xl -translate-y-12 translate-x-12 pointer-events-none" />
+              
+              <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 p-8 md:p-12 lg:p-14">
+                
+                {/* Left Column: Key Identity, Pricing, Philosophy & Core guarantees */}
+                <div className="lg:col-span-5 flex flex-col justify-between">
+                  <div>
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      <span className="inline-block px-3 py-1 bg-accent/20 border border-accent/20 rounded-full text-accent-light text-[11px] font-semibold uppercase tracking-wider">
+                        💎 Dịch Vụ Đồng Hành Lâu Dài
+                      </span>
+                      <span className="inline-block px-3 py-1 bg-red-500/10 border border-red-500/20 rounded-full text-red-400 text-[11px] font-semibold uppercase tracking-wider">
+                        ⚠️ Không làm "xem cho có"
+                      </span>
+                    </div>
+
+                    <h3 className="serif text-4xl font-light text-white leading-tight mb-4">
+                      Gói Đồng Hành <br />
+                      <span className="text-accent italic font-normal text-2xl md:text-3xl">Chuyên Sâu 2 Năm</span>
+                    </h3>
+
+                    <p className="text-sm text-paper/70 leading-relaxed mb-6 font-light">
+                      Giải pháp luận mệnh tối ưu nhất: bóc tách logic khoa học, kết hợp kiểm chứng quá khứ để xác định độ chuẩn xác của mệnh bàn, định hình tương lai vững chắc và nhận tư vấn trợ giúp liên tục trong suốt 2 năm.
+                    </p>
+
+                    {/* Price Tag with unique visual elegance */}
+                    <div className="mb-6 p-6 rounded-2xl bg-white/[0.03] border border-white/5 inline-block w-full">
+                      <span className="text-xs text-accent uppercase tracking-widest block mb-1">Mức Phí Niêm Yết</span>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-4xl md:text-5xl font-semibold text-white tracking-tight">2.000.000</span>
+                        <span className="text-xl text-accent font-medium">VNĐ</span>
+                      </div>
+                      <span className="text-[11px] text-paper/40 mt-2 block">Giá trọn gói hỗ trợ trọn vẹn trong 24 tháng</span>
+                    </div>
+
+                    {/* Interactive 1-on-1 Banner */}
+                    <div className="mb-6 flex items-center gap-3 bg-accent/10 border border-accent/20 rounded-xl p-4">
+                      <div className="w-2 h-2 rounded-full bg-accent animate-ping" />
+                      <span className="text-sm text-paper/90 font-medium">Bản chất: Luận giải tương tác trực tiếp 1 VS 1</span>
+                    </div>
+
+                    {/* Tứ Trụ Insight Quote */}
+                    <div className="mb-6 bg-white/[0.02] border border-white/5 rounded-2xl p-5 text-xs text-paper/85 leading-relaxed italic border-l-4 border-accent shadow-sm">
+                      💡 "Xem lá số Tứ Trụ cũng tương tự như việc giải một bài toán khó, càng nhiều dữ kiện được đưa ra thì dự đoán có độ chính xác càng cao!!!"
+                    </div>
+
+                    {/* True Philosophy (Tinh thần trải nghiệm thực tiễn & luận đúng là chưa đủ) */}
+                    <div className="space-y-4 border-l-2 border-accent/30 pl-4 py-1 mb-8">
+                      <p className="text-xs text-paper/85 font-medium italic">
+                        "Luận đúng quá khứ là nhiệm vụ bắt buộc của chuyên gia cốt để xem lá số có khớp đời thực hay không (trải nghiệm thực tiễn). Nhưng luận đúng là chưa đủ - điều cốt lõi là đưa ra giải pháp cải vận từ kinh nghiệm thực tiễn để kiến tạo kết quả tương lai tốt nhất cho bạn."
+                      </p>
+                    </div>
                   </div>
-                  <div className="h-px bg-white/10 w-full my-6" />
-                </div>
 
-                {/* Hình thức */}
-                <div className="mb-8 bg-accent/5 rounded-2xl p-5 border border-accent/10">
-                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-3 flex items-center gap-2">
-                    <Clock size={14} /> Hình thức & Thời gian
-                  </h4>
-                  <ul className="space-y-2 text-sm text-paper/80">
-                    <li className="flex items-start gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 shrink-0" />
-                      <span>Không tương tác, luận giải 1 chiều trả kết quả bằng file + video luận giải cá nhân hóa</span>
-                    </li>
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                      Thời gian hoàn thành: 2 – 3 ngày
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Nội dung */}
-                <div className="mb-8 flex-1">
-                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-4">
-                    🔮 Nội Dung Luận Giải
-                  </h4>
-                  <ul className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-3 text-sm text-paper/80">
-                    {[
-                      "Tài vận – Công việc",
-                      "Tình duyên – Hôn nhân",
-                      "Sức khỏe",
-                      "Xác định Dụng Thần Bát Tự",
-                      "Màu sắc phù hợp",
-                      "Hình tượng phù hợp",
-                      "Hướng phong thủy phù hợp",
-                      "Tổng quan đại vận hiện tại",
-                      "Tổng quan đại vận kế tiếp",
-                      "Chi tiết vận hạn 2 năm gần nhất",
-                      "Giải đáp tối đa 5 câu hỏi"
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-start gap-2.5">
-                        <Check size={16} className="text-accent shrink-0 mt-0.5" />
-                        <span>{item}</span>
+                  {/* Core guarantees */}
+                  <div className="space-y-3 bg-white/[0.02] border border-white/5 rounded-2xl p-5">
+                    <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-2 flex items-center gap-2">
+                      <HeartHandshake size={14} /> Đặc quyền đồng hành đặc biệt:
+                    </h4>
+                    <ul className="space-y-2 text-xs text-paper/85">
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold mt-0.5">•</span>
+                        <span><strong>Hỗ trợ liên tục trong 2 năm:</strong> Hỏi đáp tư duy phát sinh trực tiếp bất kỳ lúc nào qua Zalo chat sau buổi luận giải gốc.</span>
                       </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Khách hàng cần cung cấp */}
-                <div className="mb-8 bg-white/[0.02] border border-white/5 rounded-2xl p-5">
-                  <h4 className="text-xs uppercase tracking-wider text-paper/50 font-bold mb-3">
-                    📋 Thông tin cần cung cấp
-                  </h4>
-                  <ul className="grid grid-cols-2 gap-2 text-xs text-paper/60">
-                    {[
-                      "Ngày sinh dương lịch",
-                      "Tháng sinh dương lịch",
-                      "Năm sinh",
-                      "Giờ sinh",
-                      "5 câu hỏi cần giải",
-                      "Email / Zalo nhận"
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-center gap-1.5">
-                        <span className="w-1 h-1 rounded-full bg-paper/40" />
-                        {item}
+                      <li className="flex items-start gap-2">
+                        <span className="text-accent font-bold mt-0.5">•</span>
+                        <span><strong>Tặng kèm 2 lần luận quẻ Lục Hào:</strong> Kinh Dịch chuẩn xác hỗ trợ ra quyết định thời điểm/vấn đề đại sự kinh doanh, gia đạo.</span>
                       </li>
-                    ))}
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
 
-                {/* Thông tin hỗ trợ đối chiếu lá số */}
-                <div className="mb-8 bg-accent/[0.02] border border-accent/10 rounded-2xl p-5 text-xs text-paper/70 leading-relaxed shadow-inner">
-                  <h5 className="font-semibold text-accent mb-2 flex items-center gap-1.5">
-                    🔍 Thông tin đối chiếu (không bắt buộc)
-                  </h5>
-                  <p>
-                    Để tăng độ chính xác khi luận giải, quý khách có thể cung cấp thêm một số thông tin thực tế như nghề nghiệp hiện tại, số lượng anh chị em hoặc các dấu mốc quan trọng trong cuộc đời. Thông tin này được dùng để đối chiếu với lá số, kiểm tra độ khớp của mệnh cục và hỗ trợ luận đoán vận trình tương lai chính xác hơn.
-                  </p>
+                {/* Right Column: Detailed Checklist of Services & Deliverables */}
+                <div className="lg:col-span-7 flex flex-col justify-between border-t lg:border-t-0 lg:border-l border-white/10 pt-8 lg:pt-0 lg:pl-8">
+                  <div>
+                    <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-6 flex items-center gap-2">
+                      <BookOpen size={14} /> Chi Tiết Nội Dung Luận Giải & Đồng Hành Chuyên Sâu
+                    </h4>
+                    
+                    <div className="space-y-6">
+                      {/* Section 1: Bản mệnh & Vận trình */}
+                      <div>
+                        <h5 className="text-xs text-accent font-bold tracking-wider uppercase mb-3 text-paper/40">1. Bản mệnh & Vận trình dòng đời</h5>
+                        <ul className="grid sm:grid-cols-2 gap-3 text-sm text-paper/80">
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Đối chiếu vận hạn quá khứ</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Giải thích các sự kiện đã và đang diễn ra</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Luận giải chuyên sâu toàn bộ lá số</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Phân tích đại vận toàn bộ cuộc đời</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Chi tiết vận hạn 5 năm gần thế</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* Section 2: Định hướng thực tiễn */}
+                      <div>
+                        <h5 className="text-xs text-accent font-bold tracking-wider uppercase mb-3 text-paper/40">2. Định hướng & Phát triển bản thân</h5>
+                        <ul className="grid sm:grid-cols-2 gap-3 text-sm text-paper/80">
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Định hướng phát triển tài vận</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Định hướng nghề nghiệp phù hợp</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Hỗ trợ lựa chọn ngành nghề phù hợp</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Hỗ trợ góc nhìn đầu tư kinh doanh</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Hỗ trợ định hướng khởi nghiệp</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* Section 3: Cải mệnh & Phong thủy */}
+                      <div>
+                        <h5 className="text-xs text-accent font-bold tracking-wider uppercase mb-3 text-paper/40">3. Hóa giải, Cải vận & Phong thủy</h5>
+                        <ul className="grid sm:grid-cols-2 gap-3 text-sm text-paper/80">
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Tư vấn cải vận thực tế</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Phong thủy cá nhân bản mệnh</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Phong thủy nhà ở tăng vượng khí</span>
+                          </li>
+                        </ul>
+                      </div>
+
+                      {/* Section 4: Chế độ tương tác */}
+                      <div>
+                        <h5 className="text-xs text-accent font-bold tracking-wider uppercase mb-3 text-paper/40">4. Quy chuẩn đối hại, tương tác</h5>
+                        <ul className="grid sm:grid-cols-2 gap-3 text-sm text-paper/80">
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Không giới hạn số lượng câu hỏi</span>
+                          </li>
+                          <li className="flex items-start gap-2">
+                            <Check size={16} className="text-accent mt-0.5 shrink-0" />
+                            <span>Tương tác trực tiếp đến khi hiểu rõ vấn đề</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Register Direct Button with high visual callout */}
+                  <div className="mt-10 pt-6 border-t border-white/5">
+                    <a 
+                      href="https://zalo.me/0965414632" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="w-full bg-accent hover:bg-accent/90 text-white py-4.5 rounded-full font-semibold transition-all text-center block shadow-lg shadow-accent/20 hover:scale-[1.01] transform text-base tracking-wide"
+                    >
+                      Đăng Ký Gói Đồng Hành Chuyên Sâu
+                    </a>
+                    <span className="text-[11px] text-paper/40 text-center block mt-2">
+                      💡 Bấm để mở hộp thoại trò chuyện Zalo đặt lịch nhanh chóng
+                    </span>
+                  </div>
                 </div>
 
-                {/* Hỗ trợ sau khi nhận */}
-                <p className="text-xs italic text-paper/50 leading-relaxed mb-8 border-l-2 border-accent/20 pl-4 py-1">
-                  💡 Hỗ trợ: Khách hàng có thể nhắn tin qua Zalo để hỏi thêm những nội dung chưa rõ trong phần luận giải.
-                </p>
-              </div>
-
-              {/* CTA Button */}
-              <div className="p-8 md:p-12 pt-0 col-span-3">
-                <a 
-                  href="https://zalo.me/0965414632" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-full bg-transparent hover:bg-accent border border-accent text-accent hover:text-white py-4 rounded-full font-medium transition-all text-center block"
-                >
-                  Đăng Ký Gói Cơ Bản
-                </a>
               </div>
             </motion.div>
-
-            {/* THẺ DỊCH VỤ 2: Gói Đồng Hành Chuyên Sâu */}
-            <motion.div 
-              {...fadeIn} 
-              className="flex flex-col bg-gradient-to-b from-accent/15 to-accent/5 backdrop-blur-md rounded-[2.5rem] border-2 border-accent hover:border-accent shadow-2xl relative overflow-hidden transition-all duration-300 hover:-translate-y-1 shadow-accent/10"
-            >
-              {/* Popular Tag */}
-              <div className="absolute top-5 right-5 bg-accent text-white text-[10px] uppercase tracking-widest font-bold py-1.5 px-4 rounded-full">
-                KHUYÊN DÙNG
-              </div>
-
-              <div className="p-8 md:p-12 flex-1 flex flex-col col-span-3">
-                <div className="mb-8">
-                  <div className="flex flex-col gap-2 mb-4">
-                    <span className="inline-block self-start px-3 py-1 bg-accent/20 border border-accent/30 rounded-full text-accent-light text-xs font-semibold">
-                      💎 Dịch vụ chuyên sâu và đồng hành lâu dài
-                    </span>
-                    <span className="inline-block self-start px-3 py-1 bg-red-500/10 border border-red-500/20 rounded-full text-red-500 text-xs font-semibold">
-                      ⚠️ Không làm "xem cho có"
-                    </span>
-                  </div>
-                  <h3 className="serif text-3xl font-light text-white mb-4">
-                    Gói Đồng Hành <br />
-                    <span className="text-accent italic text-2xl">Chuyên Sâu 2 Năm</span>
-                  </h3>
-                  <div className="flex items-baseline gap-2 mb-4">
-                    <span className="text-4xl font-semibold text-white tracking-tight">1.500.000</span>
-                    <span className="text-lg text-accent font-medium">VNĐ</span>
-                  </div>
-                  <div className="h-px bg-white/10 w-full my-6" />
-                </div>
-
-                {/* Hình thức */}
-                <div className="mb-8 bg-accent/10 rounded-2xl p-5 border border-accent/20">
-                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-3 flex items-center gap-2">
-                    <Clock size={14} /> Hình thức & Tương tác
-                  </h4>
-                  <ul className="space-y-2 text-sm text-paper/80">
-                    <li className="flex items-center gap-2">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                      <strong>Luận giải tương tác 1 vs 1</strong>
-                    </li>
-                  </ul>
-                </div>
-
-                {/* Nội dung */}
-                <div className="mb-8 flex-1">
-                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-4">
-                    🔮 Nội Dung Luận Giải Chuyên Sâu
-                  </h4>
-                  <ul className="grid sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-x-6 gap-y-3 text-sm text-paper/80">
-                    {[
-                      "Đối chiếu vận hạn quá khứ",
-                      "Luận giải chuyên sâu toàn bộ lá số",
-                      "Giải thích các sự kiện đã và đang diễn ra",
-                      "Phân tích đại vận toàn bộ cuộc đời",
-                      "Chi tiết vận hạn 5 năm gần nhất",
-                      "Không giới hạn số lượng câu hỏi",
-                      "Tương tác trực tiếp đến khi hiểu rõ vấn đề",
-                      "Tư vấn cải vận thực tế",
-                      "Phong thủy nhà ở",
-                      "Phong thủy cá nhân",
-                      "Định hướng nghề nghiệp phù hợp",
-                      "Định hướng phát triển tài vận",
-                      "Hỗ trợ góc nhìn đầu tư kinh doanh",
-                      "Hỗ trợ định hướng khởi nghiệp",
-                      "Hỗ trợ lựa chọn ngành nghề phù hợp"
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-start gap-2.5">
-                        <Check size={16} className="text-accent shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Cam kết đồng hành */}
-                <div className="mb-8 bg-white/[0.03] border border-accent/20 rounded-2xl p-5">
-                  <h4 className="text-xs uppercase tracking-wider text-accent font-bold mb-3 flex items-center gap-2">
-                    <HeartHandshake size={14} /> Cam kết đồng hành đặc biệt
-                  </h4>
-                  <ul className="space-y-2 text-sm text-paper/85">
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent font-bold mt-0.5">•</span>
-                      <span>Hỗ trợ giải đáp trong <strong>2 năm</strong> sau buổi luận giải</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-accent font-bold mt-0.5">•</span>
-                      <span>Hỗ trợ thêm <strong>2 lần</strong> luận quẻ Kinh Dịch Lục Hào cho các vấn đề quan trọng</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              {/* CTA Button */}
-              <div className="p-8 md:p-12 pt-0">
-                <a 
-                  href="https://zalo.me/0965414632" 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
-                  className="w-full bg-accent hover:bg-accent/90 text-white py-4 rounded-full font-medium transition-all text-center block shadow-lg shadow-accent/20 hover:scale-[1.02] transform"
-                >
-                  Đăng Ký Gói Đồng Hành
-                </a>
-              </div>
-            </motion.div>
-
           </div>
 
           {/* SECTION CAM KẾT - Tặng Quẻ Kinh Dịch & Service Commitments */}
@@ -528,7 +498,7 @@ export default function App() {
             <motion.div {...fadeIn} className="p-10 rounded-[3rem] bg-paper border border-accent/5">
               <h3 className="serif text-2xl font-semibold mb-6">Trải nghiệm thực tiễn</h3>
               <div className="space-y-4 text-ink/70 leading-relaxed">
-                <p>Bên cạnh 5 năm nghiên cứu học thuật, tôi sở hữu <span className="font-bold text-accent">10 năm kinh nghiệm</span> trong lĩnh vực kinh doanh và quản trị nhân sự.</p>
+                <p>Bên cạnh 8 năm nghiên cứu học thuật và luận giải lá số, tôi sở hữu <span className="font-bold text-accent">10 năm kinh nghiệm</span> trong lĩnh vực kinh doanh và quản trị nhân sự.</p>
                 <p>Điều này giúp tôi thấu hiểu gốc rễ vấn đề và đưa ra giải pháp thực tế, đặc biệt trong các khía cạnh: <span className="italic">Tài chính, Vận hành doanh nghiệp và Định hướng sự nghiệp.</span></p>
               </div>
             </motion.div>
@@ -945,17 +915,17 @@ export default function App() {
               <h2 className="serif text-4xl font-light mb-8">Giá trị từ sự tích lũy</h2>
               <div className="space-y-6">
                 <div className="flex gap-6">
-                  <div className="text-accent font-bold text-3xl serif">5+</div>
+                  <div className="text-accent font-bold text-3xl serif">8+</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Năm nghiên cứu chuyên sâu</h4>
-                    <p className="text-sm text-ink/60">Học thuật bài bản về Bát Tự Manh Phái và Phong Thủy thực chiến.</p>
+                    <h4 className="font-semibold mb-1">Năm nghiên cứu & luận giải</h4>
+                    <p className="text-sm text-ink/60">Học thuật bài bản về Bát Tự Manh Phái, Phong Thủy thực chiến và nghiệm lý hàng trăm lá số.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
-                  <div className="text-accent font-bold text-3xl serif">2</div>
+                  <div className="text-accent font-bold text-3xl serif">10+</div>
                   <div>
-                    <h4 className="font-semibold mb-1">Năm luận giải nghiệm lý</h4>
-                    <p className="text-sm text-ink/60">Tích lũy kinh nghiệm thực tế từ hàng trăm lá số đa dạng.</p>
+                    <h4 className="font-semibold mb-1">Năm kinh nghiệm thực tế</h4>
+                    <p className="text-sm text-ink/60">Trong kinh doanh, quản trị nhân sự và tư vấn ứng dụng cải vận thực tiễn.</p>
                   </div>
                 </div>
                 <div className="flex gap-6">
