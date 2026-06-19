@@ -247,7 +247,7 @@ export default function App() {
                     <div className="mb-6 p-6 rounded-2xl bg-white/[0.03] border border-white/5 inline-block w-full">
                       <span className="text-xs text-accent uppercase tracking-widest block mb-1">Mức Phí Niêm Yết</span>
                       <div className="flex items-baseline gap-2">
-                        <span className="text-4xl md:text-5xl font-semibold text-white tracking-tight">2.000.000</span>
+                        <span className="text-4xl md:text-5xl font-semibold text-white tracking-tight">1.500.000</span>
                         <span className="text-xl text-accent font-medium">VNĐ</span>
                       </div>
                       <span className="text-[11px] text-paper/40 mt-2 block">Giá trọn gói hỗ trợ trọn vẹn trong 24 tháng</span>
